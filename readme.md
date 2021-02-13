@@ -5,4 +5,6 @@ Modele SVM i LogisticRegression kompilują się natychmiast, w przypadku DNN trz
 
 Wymagane bibliblioteki dla poszczególnych programów opisano w pliku requirements.txt
 
+Plik diabetes.csv powinien znaleźć się w tym samym folderze, co pliki wykonywale.
+
 Do weryfikacji wykresów oraz wyników używam IDE - w moim przypadku Spyder.
