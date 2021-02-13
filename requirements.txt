@@ -1,0 +1,22 @@
+Lista bibliotek:
+
+PIMA - SVM:
+pandas
+sklearn
+matplotlib
+seaborn
+
+PIMA - DNN:
+keras
+pandas
+sklearn
+os
+random
+tensorflow.random
+numpy
+matplotlib
+
+PIMA - LogisticRegression:
+numpy
+pandas
+sklearn
