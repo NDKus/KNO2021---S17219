@@ -46,11 +46,7 @@ Nasze atrybuty to:
 dataset = pd.read_csv('diabetes.csv')
 
 """
-Nie jest możliwe osiągnięcie wskaźnika masy ciała lub stężenia glukozy w osoczu 
-równego 0 więc czyscimy nasz dateset przd budowaniem modelu.
-Można to szybko osiągnąć, zastępując brakujące wartości wartością NaN, 
-a następnie usuwając te wiersze ze zbioru danych. Zastosowanie tego zabiegu
-nie zmieniając niczego więcej poskutkowało zwiększeniem dokładnosci o 1.16%
+Wskazujemy nasz podział na featury i klasę.
 """
 
 X = dataset.iloc[:, 0:8]
@@ -74,7 +70,7 @@ za każdym razem inne wartosci. Dzięki wpisaniu okrelonej wartosci wyniki bedą
 tożsame po każdym uruchomieniu. Random state dzieli co prawda losowo ale z ustalonym
 "twistem", dzięki któremu kolejnoć jest taka sama. 
 
-Wielkosc próbki testowej ustawiamy jako 20% danych.
+Wielkosc próbki testowej ustawiamy jako 30% danych.
 
 Dokonujemy również standaryzacji zbioru danych: mogą one działać źle, jeśli
 poszczególne cechy nie wyglądają mniej więcej jak standardowe dane o rozkładzie 

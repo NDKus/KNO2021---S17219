@@ -24,7 +24,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
-
+import matplotlib.pyplot as plt
 
 # Wczytanie pliku
 """
@@ -49,7 +49,7 @@ Data columns (total 9 columns):
 8 Outcome                     768 non-null int64
 """
 
-"""# Wizualizacja korelacji cech
+# Wizualizacja korelacji cech
 def visualise(data):
     fig, ax = plt.subplots()
     ax.scatter(data.iloc[:,1].values, data.iloc[:,5].values)
@@ -59,7 +59,7 @@ def visualise(data):
 
 # Wyswietlenie wykresu przed czyszczeniem
 visualise(data)
-"""
+
 
 """
 Nie jest możliwe osiągnięcie wskaźnika masy ciała lub stężenia glukozy w osoczu 
@@ -74,7 +74,7 @@ data[['Glucose','BMI']] = data[['Glucose','BMI']].replace(0, np.NaN)
 data.dropna(inplace=True)
 
 # Wyswietlenie wykresu po czyszczeniu
-#visualise(data)
+visualise(data)
 
 # Wyodrębnienie dwóch cech do budowy klasyfikatora regresji logistycznej
 """
